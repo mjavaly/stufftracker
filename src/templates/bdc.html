@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<html lang="en">
+<head>
+  <title>Cafe Inventory</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <style>
+    div.container {
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+
+    th {
+      text-align: center;
+    }
+
+    tbody {
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type=radio] {
+      transform: scale(2);
+    }
+
+    button {
+      height: 5%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mug Tracker</h1>
+    <form role='form' action="/" method="POST">
+        <table class="table table-hover">
+        <tr>
+            <th>Mug</th>
+            <th>Check In</th>
+            <th>Check Out</th>
+        </tr>
+        {% block body %}
+            {% for mug in mugs %}
+            <tr>
+            <td> {{ mug }} </td>
+            <td><label><input type="radio" name={{mug}} value="1" {% if mugs[mug]==True %} checked="" {% endif %}></label></td>
+            <td><label><input type="radio" name={{mug}} value="0" {% if mugs[mug]==False %} checked="" {% endif %}></label></td>
+            </tr>
+            {% endfor %}
+        {% endblock %}
+        </div>
+        </table>
+        <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

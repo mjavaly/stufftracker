@@ -1,0 +1,29 @@
+<inventory>
+  <mugs>
+    <mug checkedin="True">1</mug>
+    <mug checkedin="True">2</mug>
+    <mug checkedin="True">3</mug>
+    <mug checkedin="True">4</mug>
+    <mug checkedin="False">5</mug>
+    <mug checkedin="True">6</mug>
+    <mug checkedin="True">7</mug>
+    <mug checkedin="True">8</mug>
+    <mug checkedin="False">9</mug>
+    <mug checkedin="True">10</mug>
+    <mug checkedin="True">11</mug>
+    <mug checkedin="True">12</mug>
+    <mug checkedin="True">13</mug>
+    <mug checkedin="True">14</mug>
+    <mug checkedin="True">15</mug>
+    <mug checkedin="True">16</mug>
+    <mug checkedin="True">17</mug>
+    <mug checkedin="True">18</mug>
+    <mug checkedin="False">19</mug>
+    <mug checkedin="False">20</mug>
+    <mug checkedin="False">21</mug>
+    <mug checkedin="False">22</mug>
+    <mug checkedin="False">23</mug>
+    <mug checkedin="False">24</mug>
+    <mug checkedin="False">25</mug>
+  </mugs>
+</inventory>
